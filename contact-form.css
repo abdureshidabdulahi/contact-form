@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(106, 217, 180,0.5);
+    
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    height: fit-content;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 40px 0;
+}
+.header{
+    width: 100%;
+}
+.header h1{
+    font-size: 40px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 20px;
+}
+.full-name{
+    width: 100%;
+display: flex;
+align-items: center;
+gap: 20px;
+}
+.first-name{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 69px;
+}
+.last-name{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 69px;
+
+}
+.first-name input{
+    height: 35px;
+    font-size: 17px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+.first-name input:hover{
+                cursor: pointer;
+                outline: 1px solid green;
+}
+.first-name input:focus{
+    outline: 1px solid green;
+    
+
+}
+.last-name input{
+    height: 35px;
+    font-size: 17px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+.last-name input:hover{
+    cursor: pointer;
+    outline: 1px solid green;
+}
+.last-name input:focus{
+    outline: 1px solid green;
+}
+.email{
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 5px;
+
+}
+.email input{
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.email input:hover{
+    cursor: pointer;
+    outline: 1px solid green;
+}
+.email input:focus{
+    outline: 1px solid green;
+}
+.querry-type{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:fit-content;
+    margin: 20px 0;
+    
+}
+.queries{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 2px 0;
+}
+
+.queries .query-type2{
+    
+    border: 1px solid black;
+    flex-grow: 1;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+}
+.queries .query-type1{
+   
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border: 1px solid black;
+    flex-grow: 1;
+    border-radius: 5px;
+
+}
+.queries .query-type1:hover{
+    cursor: pointer;
+    
+}
+.queries .query-type2:hover{
+    cursor: pointer;
+   
+}
+.query-type1 input{
+    margin-right: 10px;
+    transform: scale(1.3);
+    accent-color: green;
+}
+ 
+.query-type2 input{
+    margin-right: 10px;
+    transform: scale(1.3);
+    accent-color: green;
+}
+.query-type1 input:hover{
+    cursor: pointer;
+}
+.query-type2 input:hover{
+    cursor: pointer;
+    
+}
+textarea{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    resize: none;
+    padding: 10px;
+    margin: 2px 0;
+}
+.messege{
+    width: 100%;
+    margin: 20px 0;
+}
+ #yes{
+    margin-right: 10px;
+    transform: scale(1.3);
+    accent-color: green;
+ }
+ #yes:hover{
+    cursor: pointer;
+ }
+span{
+    color: green;
+
+}
+.btn{
+    width: 100%;
+    height: 40px;
+    margin: 20px 0;
+}
+.btn button{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 128, 0,0.7);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+.btn button:hover{
+    cursor: pointer;
+}
+
+ @media(min-width:540px) and (max-width:1050px){
+    .container{
+        width: 50%;
+        height: fit-content;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: white;
+        padding: 20px;
+     }
+     .full-name{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+     }
+     .first-name{
+        width: 100%;
+    
+     }
+     .first-name input, p,small{
+        width: 100%;
+     }
+    .last-name{
+        width: 100%;
+    }
+    .last-name input,p,small{
+        width: 100%;
+    }
+    .querry-type{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .querry-type .title{
+        width: 100%;
+    }
+    .queries{
+        display: flex;
+        flex-direction: column;
+    }
+    .queries, .query-type1, .query-type2, small{
+        width: 100%;
+    }
+ }

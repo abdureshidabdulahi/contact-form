@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact-form.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="header"><h1>contact us</h1></div>
+            <div class="full-name">
+               <div class="first-name">
+                <p>first name <span>*</span></p>
+                <input type="text" id="first_name">
+                <small id="errorFirstname" style="display: none ; color: red;">this field is required</small>
+            </div> 
+               <div class="last-name">
+                <p>last name <span>*</span></p>
+                <input type="text" id="lastName">
+                <small id="errorLastName" style="display: none; color: red;">this field is required</small></div>
+            </div>
+            <div class="email">
+                <p>Email address <span>*</span></p>
+                <input type="text" name="" id="email">
+                <small id="errorEmail" style="display: none; color: red;">please enter valid email address</small>
+            </div>
+            <div class="querry-type">
+                <div class="title">
+                    <p>Query Type <span>*</span></p>
+                </div>
+                <div class="queries">
+                    <div class="query-type1">
+                        <input type="radio" name="choice" value="General Type" onclick="radio()">General Type
+                    </div>
+                    <div class="query-type2">
+                        <input type="radio" value="Support request" name="choice" onclick="radio_2()">Support request
+                    </div>
+                </div>
+                <small id="errorQuery" style="display: none; color: red;">please select a query type</small>
+            </div>
+            <div class="messege">
+                <p>messege <span>*</span></p>  
+                <textarea name="" id="textArea" rows="5" cols="80" placeholder="write your comment here please...."></textarea>
+                <small id="errortext" style="display: none ; color: red;">This field is required</small>
+            </div>
+            <input type="checkbox" name="agree" id="yes"> I consent to being contacted by the team <span>*</span><br>
+            <small id="errorcheckbox" style="display: none ; color: red;">To submit this form, please consent to being contacted</small>
+            <div class="btn">
+                <button type="submit" id="button">submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="contact-form.js"></script>
+</body>
+</html>
