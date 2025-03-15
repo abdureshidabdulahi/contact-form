@@ -26,7 +26,7 @@ let textArea=document.getElementById("textArea")
 let errortext= document.getElementById("errortext")
 let errorcheckbox=document.getElementById("errorcheckbox")
 button.addEventListener("click", function(event){
-     let  buttons=document.querySelector('input[name="choice"]:checked')// why this indside the function but not outside 
+     let  buttons=document.querySelector('input[name="choice"]:checked') 
      let  check=document.querySelector('input[name="agree"]:checked')
       if(first_name.value.trim() === ""){
             
@@ -83,7 +83,7 @@ button.addEventListener("click", function(event){
             errorcheckbox.style.display ="none"
       }
  if(!isvalid){
-      event.preventDefault();// why this at the button
+      event.preventDefault();
  }
 })
 
